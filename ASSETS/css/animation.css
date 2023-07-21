@@ -1,0 +1,64 @@
+/*********ANIMATION*********/
+
+.reseaux-sociaux{
+  position: absolute;
+  position: fixed;
+  display: flex;
+  margin-left: 30px;
+}
+.reseaux-sociaux .left .line1{
+  width: 3px;
+  height: 350px;
+  background-color: var(--pink2);
+}
+.reseaux-sociaux .right .line2{
+  width: 3px;
+  height: 240px;
+  background-color: var(--pink2);
+}
+.reseaux-sociaux .right .icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 110px;
+}
+.reseaux-sociaux .right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5px;
+}
+.targetElement{
+
+}
+.fadeInLeft{
+  -moz-animation: fadeInLeft 1.2s both;
+}
+.fadeInDown{
+  -moz-animation: fadeInDown 1.5s both;
+}
+
+@-moz-keyframes fadeInLeft{
+  0%{
+    opacity: 0;
+    -moz-transform: translateX(-50px);
+  }
+  100%{
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInDown{
+  0%{
+    opacity: 0;
+    -moz-transform: translateY(-350px);
+  }
+  100%{
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+.visible{
+  visibility: hidden;
+}
